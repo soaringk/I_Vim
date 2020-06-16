@@ -15,27 +15,27 @@ Start a vim instance and run `PlugInstall`.
 
 Plugin Manager: [vim-plug](https://github.com/junegunn/vim-plug)
 
-```
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary'
-Plug 'preservim/nerdtree'
-Plug 'terryma/vim-expand-region'
-Plug 'michaeljsmith/vim-indent-object'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'simnalamburt/vim-mundo'
-Plug 'maxbrunsfeld/vim-yankstack'
-Plug 'tpope/vim-fugitive'
-Plug 'easymotion/vim-easymotion'
-Plug 'justinmk/vim-sneak'
-Plug 'bkad/camelcasemotion'
+## Plugins
 
-" Syntax and linting
-Plug 'dense-analysis/ale'
+[Nerd Tree](https://github.com/preservim/nerdtree): file explorer
+[vim-mundo](https://github.com/simnalamburt/vim-mundo): vim undo tree visualizer
+[ack.vim](https://github.com/mileszs/ack.vim): faster 'grep'
 
-" Themes
-Plug 'itchyny/lightline.vim'
-Plug 'joshdick/onedark.vim'
+[vim-surround](https://github.com/tpope/vim-surround): surround with quotes/parenthesis
+[vim-commentary](https://github.com/tpope/vim-commentary): simple comment
+[vim-expand-region](https://github.com/terryma/vim-expand-region): visually select increasingly larger regions of text
+[vim-indent-object](https://github.com/michaeljsmith/vim-indent-object): indent plugin (useful for python)
+[vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors): multiple cursor mode
+[vim-yankstack](https://github.com/maxbrunsfeld/vim-yankstack): preserve yank after changes
+[auto-pairs](https://github.com/jiangmiao/auto-pairs): insert/delete brackets, parens, quotes in pair
 
-" fast grep of vim
-Plug 'mileszs/ack.vim
-```
+[vim-easymotion](https://github.com/easymotion/vim-easymotion): motion on speed!
+[vim-sneak](https://github.com/justinmk/vim-sneak): jump to any location specified by two characters
+[camelcasemotion](https://github.com/bkad/CamelCaseMotion): motion for camelCase and snake_case
+
+[vim-fugitive](https://github.com/tpope/vim-fugitive): a Git wrapper
+[ale](https://github.com/dense-analysis/ale): syntax checker and linter
+[youcompleteme](https://github.com/ycm-core/YouCompleteMe): code-completion engine (personally only enabled for python and C family)
+
+[lightline.vim](https://github.com/itchyny/lightline.vim): light and configurable statusline/tabline
+[onedark](https://github.com/joshdick/onedark.vim): one dark theme

@@ -15,6 +15,12 @@ nmap <C-n> <Plug>yankstack_substitute_newer_paste
 
 
 """"""""""""""""""""""""""""""
+" => CamelCaseMotion
+""""""""""""""""""""""""""""""
+let g:camelcasemotion_key = '<leader>'
+
+
+""""""""""""""""""""""""""""""
 " => Vim grep
 """"""""""""""""""""""""""""""
 let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'

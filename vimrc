@@ -10,6 +10,7 @@ call plug#begin('~/.vim_runtime/plugged')
 " file
 Plug 'preservim/nerdtree'
 Plug 'simnalamburt/vim-mundo'
+Plug 'mileszs/ack.vim'
 
 " editing tools
 Plug 'tpope/vim-surround'
@@ -35,9 +36,6 @@ Plug 'valloric/youcompleteme'
 " Themes
 Plug 'itchyny/lightline.vim'
 Plug 'joshdick/onedark.vim'
-
-" fast grep of vim
-Plug 'mileszs/ack.vim'
 
 " On-demand lazy load
 " Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
