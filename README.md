@@ -5,8 +5,8 @@ My vim configuration.
 # Installation
 
 ```
-https://github.com/soaringk/I_Vim.git ~/.vim
-link -s ~/.vim/.vimrc ~/
+https://github.com/soaringk/I_Vim.git ~/.vim_runtime
+link -s ~/.vim_runtime/vimrc ~/.vimrc
 ```
 
 Start a vim instance and run `PlugInstall`.

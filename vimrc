@@ -1,25 +1,36 @@
+set runtimepath+=~/.vim_runtime
+
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.vim_runtime/plugged')
 
 " Make sure you use single quotes
 
+" file
+Plug 'preservim/nerdtree'
+Plug 'simnalamburt/vim-mundo'
+
+" editing tools
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
-Plug 'preservim/nerdtree'
 Plug 'terryma/vim-expand-region'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'simnalamburt/vim-mundo'
 Plug 'maxbrunsfeld/vim-yankstack'
-Plug 'tpope/vim-fugitive'
+Plug 'jiangmiao/auto-pairs'
+
+" motion tools
 Plug 'easymotion/vim-easymotion'
 Plug 'justinmk/vim-sneak'
 Plug 'bkad/camelcasemotion'
 
+" git
+Plug 'tpope/vim-fugitive'
+
 " Syntax and linting
 Plug 'dense-analysis/ale'
+Plug 'valloric/youcompleteme'
 
 " Themes
 Plug 'itchyny/lightline.vim'
@@ -34,10 +45,7 @@ Plug 'mileszs/ack.vim'
 " Initialize plugin system
 call plug#end()
 
-
-set runtimepath+=~/.vim
-
-source ~/.vim/vimrcs/basic.vim
-source ~/.vim/vimrcs/filetypes.vim
-source ~/.vim/vimrcs/plugins_config.vim
-source ~/.vim/vimrcs/extended.vim
+source ~/.vim_runtime/vimrcs/basic.vim
+source ~/.vim_runtime/vimrcs/filetypes.vim
+source ~/.vim_runtime/vimrcs/plugins_config.vim
+source ~/.vim_runtime/vimrcs/extended.vim
