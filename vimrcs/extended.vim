@@ -17,7 +17,7 @@ elseif has("gui_gtk2")
     set gfn=FiraCode\ Nerd\ Font,Bitstream\ Vera\ Sans\ Mono\ 11
 elseif has("linux")
     set gfn=FiraCode\ Nerd\ Font,Bitstream\ Vera\ Sans\ Mono\ 11
-eif has("unix")
+elseif has("unix")
     set gfn=Monospace\ 11
 endif
 
