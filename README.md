@@ -5,7 +5,7 @@ My vim configuration.
 # Installation
 
 ```
-https://github.com/soaringk/I_Vim.git ~/.vim_runtime
+git clone https://github.com/soaringk/I_Vim.git ~/.vim_runtime
 ln -s ~/.vim_runtime/vimrc ~/.vimrc
 ```
 
@@ -18,24 +18,37 @@ Plugin Manager: [vim-plug](https://github.com/junegunn/vim-plug)
 ## Plugins
 
 [Nerd Tree](https://github.com/preservim/nerdtree): file explorer
+
 [vim-mundo](https://github.com/simnalamburt/vim-mundo): vim undo tree visualizer
+
 [ack.vim](https://github.com/mileszs/ack.vim): faster 'grep'
 
 [vim-surround](https://github.com/tpope/vim-surround): surround with quotes/parenthesis
+
 [vim-commentary](https://github.com/tpope/vim-commentary): simple comment
+
 [vim-expand-region](https://github.com/terryma/vim-expand-region): visually select increasingly larger regions of text
+
 [vim-indent-object](https://github.com/michaeljsmith/vim-indent-object): indent plugin (useful for python)
+
 [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors): multiple cursor mode
+
 [vim-yankstack](https://github.com/maxbrunsfeld/vim-yankstack): preserve yank after changes
+
 [auto-pairs](https://github.com/jiangmiao/auto-pairs): insert/delete brackets, parens, quotes in pair
 
 [vim-easymotion](https://github.com/easymotion/vim-easymotion): motion on speed!
+
 [vim-sneak](https://github.com/justinmk/vim-sneak): jump to any location specified by two characters
+
 [camelcasemotion](https://github.com/bkad/CamelCaseMotion): motion for camelCase and snake_case
 
 [vim-fugitive](https://github.com/tpope/vim-fugitive): a Git wrapper
+
 [ale](https://github.com/dense-analysis/ale): syntax checker and linter
+
 [youcompleteme](https://github.com/ycm-core/YouCompleteMe): code-completion engine (personally only enabled for python and C family)
 
 [lightline.vim](https://github.com/itchyny/lightline.vim): light and configurable statusline/tabline
+
 [onedark](https://github.com/joshdick/onedark.vim): one dark theme
