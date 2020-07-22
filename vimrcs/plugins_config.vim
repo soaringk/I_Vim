@@ -125,3 +125,9 @@ let g:ycm_extra_conf_vim_data = [
   \  'g:ycm_python_sys_path'
   \]
 let g:ycm_global_ycm_extra_conf = '~/.vim_runtime/ycm_global_extra_conf.py'
+
+nnoremap <leader>yg :YcmCompleter GoTo<CR>
+nnoremap <leader>yd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <leader>ygi :YcmCompleter GoToInclude<CR>
+nnoremap <leader>ygl :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>ygf :YcmCompleter GoToDefinition<CR>
