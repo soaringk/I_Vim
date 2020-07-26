@@ -33,6 +33,7 @@
 " Sets how many lines of history VIM has to remember
 set history=1000
 
+set viminfo+=n~/.vim_runtime/temp_dirs/viminfo
 " Enable filetype plugins
 filetype plugin on
 filetype indent on

@@ -46,11 +46,11 @@ colorscheme onedark
 " => Turn persistent undo on
 "    means that you can undo even when you close a buffer/VIM
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-try
-    set undodir=~/.vim_runtime/temp_dirs/undodir
-    set undofile
-catch
-endtry
+if !isdirectory($HOME."/.vim_runtime/temp_dirs/undodir")
+    call mkdir($HOME."/.vim_runtime/temp_dirs/undodir", "p", 0700)
+endif
+set undodir=~/.vim_runtime/temp_dirs/undodir
+set undofile
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
