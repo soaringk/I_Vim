@@ -19,7 +19,7 @@ Plug 'terryma/vim-expand-region'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'maxbrunsfeld/vim-yankstack'
-Plug 'jiangmiao/auto-pairs'
+Plug 'tmsvg/pear-tree'
 
 " motion tools
 Plug 'easymotion/vim-easymotion'

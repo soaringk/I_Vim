@@ -35,7 +35,7 @@ Plugin Manager: [vim-plug](https://github.com/junegunn/vim-plug)
 
 [vim-yankstack](https://github.com/maxbrunsfeld/vim-yankstack): preserve yank after changes
 
-[auto-pairs](https://github.com/jiangmiao/auto-pairs): insert/delete brackets, parens, quotes in pair
+[pear-tree](https://github.com/tmsvg/pear-tree): A painless, powerful Vim auto-pair plugin.
 
 [vim-easymotion](https://github.com/easymotion/vim-easymotion): motion on speed!
 
