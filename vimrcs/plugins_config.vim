@@ -118,13 +118,18 @@ let g:ale_lint_on_enter = 0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => YouCompleteMe (code-completion engine for Vim)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ycm_python_interpreter_path = ''
+if has("mac") || has("macunix")
+    let g:ycm_python_interpreter_path = $HOME."/.pyenv/shims/python"
+elseif has("win16") || has("win32")
+elseif has("linux")
+    let g:ycm_python_interpreter_path = "/usr/bin/python3"
+endif
 let g:ycm_python_sys_path = []
 let g:ycm_extra_conf_vim_data = [
   \  'g:ycm_python_interpreter_path',
   \  'g:ycm_python_sys_path'
   \]
-let g:ycm_global_ycm_extra_conf = '~/.vim_runtime/ycm_global_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = $HOME."/.vim_runtime/ycm_global_extra_conf.py"
 
 nnoremap <leader>yg :YcmCompleter GoTo<CR>
 nnoremap <leader>yd :YcmCompleter GoToDefinitionElseDeclaration<CR>
