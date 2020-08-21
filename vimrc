@@ -20,6 +20,7 @@ Plug 'michaeljsmith/vim-indent-object'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'tmsvg/pear-tree'
+Plug 'vim-scripts/ReplaceWithRegister'
 
 " motion tools
 Plug 'easymotion/vim-easymotion'
