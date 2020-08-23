@@ -8,7 +8,8 @@ call plug#begin('~/.vim_runtime/plugged')
 " Make sure you use single quotes
 
 " file
-Plug 'preservim/nerdtree'
+Plug 'preservim/nerdtree' |
+            \ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'simnalamburt/vim-mundo'
 Plug 'mileszs/ack.vim'
 
@@ -18,7 +19,6 @@ Plug 'tpope/vim-commentary'
 Plug 'terryma/vim-expand-region'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'tmsvg/pear-tree'
 Plug 'vim-scripts/ReplaceWithRegister'
 
@@ -46,5 +46,5 @@ call plug#end()
 
 source ~/.vim_runtime/vimrcs/basic.vim
 source ~/.vim_runtime/vimrcs/filetypes.vim
-source ~/.vim_runtime/vimrcs/plugins_config.vim
-source ~/.vim_runtime/vimrcs/extended.vim
+exec "source ~/.vim_runtime/vimrcs/plugins_config.vim"
+exec "source ~/.vim_runtime/vimrcs/extended.vim"

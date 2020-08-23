@@ -1,13 +1,13 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Maintainer:
-"       Amir Salihefendic — @amix3k
+"       Kevin.Z — @soaringk
 "
 " Awesome_version:
 "       Get this config, nice color schemes and lots of plugins!
 "
 "       Install the awesome version from:
 "
-"           https://github.com/amix/vimrc
+"           https://github.com/soaringk/I_Vim
 "
 " Sections:
 "    -> General
@@ -46,27 +46,24 @@ au FocusGained,BufEnter * checktime
 " like <leader>w saves the current file
 let mapleader = " "
 
-" Fast saving
-nmap <leader>w :w!<cr>
+" Fast saving and close
+nnoremap <leader>s :w<cr>
+nnoremap <leader>x :q<cr>
+nnoremap <leader>xx :qa!<cr>
+nnoremap <leader>z :wq<cr>
 
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
 " command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
-
+set showmode
 set showcmd
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set 7 lines to the cursor - when moving vertically using j/k
-set so=7
-
-" Avoid garbled characters in Chinese language windows OS
-let $LANG='en'
-set langmenu=en
-source $VIMRUNTIME/delmenu.vim
-source $VIMRUNTIME/menu.vim
+" Set 5 lines to the cursor - when moving vertically using j/k
+set so=5
 
 " Turn on the Wild menu
 set wildmenu
@@ -322,13 +319,13 @@ map <leader>s? z=
 " => Misc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remove the Windows ^M - when the encodings gets messed up
-noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+" noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
 " Quickly open a buffer for scribble
 map <leader>q :e ~/buffer<cr>
 
 " Quickly open a markdown buffer for scribble
-map <leader>x :e ~/buffer.md<cr>
+" map <leader>m :e ~/buffer.md<cr>
 
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
