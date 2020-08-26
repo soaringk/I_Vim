@@ -47,9 +47,10 @@ au FocusGained,BufEnter * checktime
 let mapleader = " "
 
 " Fast saving and close
-nnoremap <leader>s :w<cr>
-nnoremap <leader>x :q<cr>
-nnoremap <leader>xx :qa!<cr>
+nnoremap <leader>fw :w<cr>
+nnoremap <leader>fW :W<cr>
+nnoremap <leader>fq :q<cr>
+nnoremap <leader>fQ :qa!<cr>
 nnoremap <leader>z :wq<cr>
 
 " :W sudo saves the file
@@ -227,6 +228,9 @@ map <leader>ba :bufdo bd<cr>
 
 map <leader>l :bnext<cr>
 map <leader>h :bprevious<cr>
+
+" Useful mappings for managing windows
+nnoremap <C-o> :only<cr>
 
 " Useful mappings for managing tabs
 map <leader>tn :tabnew<cr>

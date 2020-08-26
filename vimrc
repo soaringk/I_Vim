@@ -32,7 +32,7 @@ Plug 'tpope/vim-fugitive'
 
 " Syntax and linting
 Plug 'dense-analysis/ale'
-Plug 'valloric/youcompleteme'
+Plug 'valloric/youcompleteme', { 'do': 'python3 install.py' }
 
 " Themes
 Plug 'itchyny/lightline.vim'
