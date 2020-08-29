@@ -38,7 +38,7 @@ function! Toggle_transparent()
         let t:is_transparent = 0
     endif
 endfunction
-nnoremap <C-`> : call Toggle_transparent()<CR>
+nnoremap <leader>` :call Toggle_transparent()<CR>
 " Colorscheme
 silent! colorscheme onedark
 
