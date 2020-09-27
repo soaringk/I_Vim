@@ -10,7 +10,7 @@ set textobj-entire
 set ReplaceWithRegister
 
 """ Common settings -------------------------
-set clipboard+=unnamed
+" set clipboard+=unnamed
 
 """ Idea specific settings ------------------
 set ideajoin
