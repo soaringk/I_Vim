@@ -140,7 +140,7 @@ let g:ale_lint_on_enter = 0
 if has("mac") || has("macunix")
     let g:ycm_python_interpreter_path = $HOME."/.pyenv/shims/python"
 elseif has("win16") || has("win32")
-elseif has("linux")
+elseif has("unix")
     let g:ycm_python_interpreter_path = "/usr/bin/python3"
 endif
 let g:ycm_python_sys_path = []
