@@ -155,3 +155,9 @@ nnoremap <leader>yd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <leader>ygi :YcmCompleter GoToInclude<CR>
 nnoremap <leader>ygl :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>ygf :YcmCompleter GoToDefinition<CR>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => fzf-vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set rtp+=/usr/local/opt/fzf
