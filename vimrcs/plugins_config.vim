@@ -161,3 +161,9 @@ nnoremap <leader>ygf :YcmCompleter GoToDefinition<CR>
 " => fzf-vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set rtp+=/usr/local/opt/fzf
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-plist
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:plist_display_format = 'json'

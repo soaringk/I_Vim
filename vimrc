@@ -12,6 +12,7 @@ Plug 'preservim/nerdtree' |
             \ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'simnalamburt/vim-mundo'
 Plug 'mileszs/ack.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 " editing tools
 Plug 'tpope/vim-surround'
@@ -38,7 +39,8 @@ Plug 'valloric/youcompleteme', { 'do': 'python3 install.py' }
 Plug 'itchyny/lightline.vim'
 Plug 'joshdick/onedark.vim'
 
-" On-demand lazy load
+" plist support
+Plug 'darfink/vim-plist'
 " Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 
 " Initialize plugin system
