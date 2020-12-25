@@ -53,6 +53,8 @@ nnoremap <leader>fq :q<cr>
 nnoremap <leader>fQ :qa!<cr>
 nnoremap <leader>z :wq<cr>
 
+inoremap kj <Esc>
+
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
 " command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
