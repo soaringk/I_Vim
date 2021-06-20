@@ -53,8 +53,8 @@ nnoremap <leader>fq :q<cr>
 nnoremap <leader>fQ :qa!<cr>
 nnoremap <leader>z :wq<cr>
 
-inoremap kj <Esc>
-vnoremap kj <Esc>
+inoremap \z <Esc>
+vnoremap \z <Esc>
 
 " :W sudo saves the file
 " (useful for handling the permission-denied error)

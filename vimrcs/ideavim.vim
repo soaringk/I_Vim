@@ -20,21 +20,34 @@ set idearefactormode=keep
 set keep-english-in-normal
 
 """ Mappings --------------------------------
-map <leader><leader>f <Plug>(easymotion-s)
-map <leader><leader>e <Plug>(easymotion-f)
+nnoremap <leader><leader>f <Plug>(easymotion-s)
+nnoremap <leader><leader>e <Plug>(easymotion-f)
 
-map <leader>d :action Debug<CR>
-map <leader>r :action Rerun<CR>
-map <leader>f :action RenameElement<CR>
-map <leader>c :action Stop<CR>
-map <leader>z :action ToggleDistractionFreeMode<CR>
+# nnoremap <leader>d :action Debug<CR>
+# nnoremap <leader>r :action Rerun<CR>
+nnoremap <leader>rf :action RenameFile<CR>
+nnoremap <leader>re :action RenameElement<CR>
+nnoremap <leader>rs :action ChangeSignature<CR>
+nnoremap <leader>c :action Stop<CR>
+nnoremap <leader>z :action ToggleDistractionFreeMode<CR>
+nnoremap <Leader>fu :action FindUsages<CR>
 
-map <leader>s :action SelectInProjectView<CR>
-map <leader>a :action Annotate<CR>
-map <leader>h :action Vcs.ShowTabbedFileHistory<CR>
-map <S-Space> :action GotoNextError<CR>
+nnoremap <leader>s :action SelectInProjectView<CR>
+nnoremap <leader>a :action Annotate<CR>
+nnoremap <leader>h :action Vcs.ShowTabbedFileHistory<CR>
+nnoremap <S-Space> :action GotoNextError<CR>
 
-map <leader>b :action ToggleLineBreakpoint<CR>
-map <leader>o :action FileStructurePopup<CR>
+nnoremap <leader>bb :action ToggleLineBreakpoint<CR>
+nnoremap <leader>br :action ViewBreakpoints<CR>
+nnoremap <leader>o :action FileStructurePopup<CR>
+
+nnoremap <Leader>ga :action GotoAction<CR>
+nnoremap <Leader>gc :action GotoClass<CR>
+nnoremap <Leader>b :action GotoDeclaration<CR>
+nnoremap <Leader>gf :action GotoFile<CR>
+nnoremap <Leader>i :action GotoImplementation<CR>
+nnoremap <Leader>gt :action GotoTest<CR>
+
+nnoremap <Leader>fm :action ReformatCode<CR>
 
 source ~/.vimrc
