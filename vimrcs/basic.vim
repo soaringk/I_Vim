@@ -47,14 +47,12 @@ au FocusGained,BufEnter * checktime
 let mapleader = " "
 
 " Fast saving and close
-nnoremap <leader>fw :w<cr>
-nnoremap <leader>fW :W<cr>
-nnoremap <leader>fq :q<cr>
-nnoremap <leader>fQ :qa!<cr>
+nnoremap <leader>s :wa<cr>
+nnoremap <leader>q :qa!<cr>
 nnoremap <leader>z :wq<cr>
 
-inoremap \z <Esc>
-vnoremap \z <Esc>
+inoremap jj <Esc>
+vnoremap jj <Esc>
 
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
@@ -161,7 +159,10 @@ if has("gui_running")
 endif
 
 " Set utf8 as standard encoding and en_US as the standard language
+let $LANG="zh_CN.UTF-8"
 set encoding=utf8
+set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
+set fileencoding=utf-8
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
