@@ -40,6 +40,8 @@ function! Toggle_transparent()
 endfunction
 nnoremap <leader>` :call Toggle_transparent()<CR>
 " Colorscheme
+syntax on
+set termguicolors
 silent! colorscheme onedark
 
 
