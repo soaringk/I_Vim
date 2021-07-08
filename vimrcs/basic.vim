@@ -51,7 +51,7 @@ nnoremap <leader>s :wa<cr>
 nnoremap <leader>q :qa!<cr>
 nnoremap <leader>z :wq<cr>
 
-inoremap jj <Esc>
+inoremap kj <Esc>
 
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
