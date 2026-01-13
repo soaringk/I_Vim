@@ -11,6 +11,10 @@ set ReplaceWithRegister
 
 """ Common settings -------------------------
 " set clipboard+=unnamed
+set scrolloff=5
+set incsearch
+set relativenumber
+set number
 
 """ Idea specific settings ------------------
 set ideajoin
@@ -20,34 +24,44 @@ set idearefactormode=keep
 set keep-english-in-normal
 
 """ Mappings --------------------------------
-nnoremap <leader><leader>f <Plug>(easymotion-s)
-nnoremap <leader><leader>e <Plug>(easymotion-f)
+map <c-x> <Action>(ShowErrorDescription)
+map <leader><leader>s <Plug>(easymotion-s)
+map <leader><leader>f <Plug>(easymotion-f)
+map <leader><leader>w <Plug>(easymotion-w)
+map <leader><leader>e <Plug>(easymotion-e)
+map gb <Action>(SelectNextOccurrence)
+""" Terminal
+map <c-`> <Action>(ActivateTerminalToolWindow)
+map <leader>t <Action>(Terminal.OpenInTerminal)
 
-# nnoremap <leader>d :action Debug<CR>
-# nnoremap <leader>r :action Rerun<CR>
-nnoremap <leader>rf :action RenameFile<CR>
-nnoremap <leader>re :action RenameElement<CR>
-nnoremap <leader>rs :action ChangeSignature<CR>
-nnoremap <leader>c :action Stop<CR>
-nnoremap <leader>z :action ToggleDistractionFreeMode<CR>
-nnoremap <Leader>fu :action FindUsages<CR>
+map <leader>d <Action>(Debug)
+map <leader>r <Action>(Rerun)
+map <leader>b <Action>(ToggleLineBreakpoint)
+map <leader>rf <Action>(RenameFile)
+map <leader>re <Action>(RenameElement)
+map <leader>rs <Action>(ChangeSignature)
+map <leader>c <Action>(Stop)
+map <leader>z <Action>(ToggleDistractionFreeMode)
+map <Leader>fu <Action>(FindUsages)
 
-nnoremap <leader>s :action SelectInProjectView<CR>
-nnoremap <leader>a :action Annotate<CR>
-nnoremap <leader>h :action Vcs.ShowTabbedFileHistory<CR>
-nnoremap <S-Space> :action GotoNextError<CR>
+map <leader>s <Action>(SelectInProjectView)
+map <leader>a <Action>(Annotate)
+map <leader>h <Action>(Vcs)
+map <S-Space> <Action>(GotoNextError)
 
-nnoremap <leader>bb :action ToggleLineBreakpoint<CR>
-nnoremap <leader>br :action ViewBreakpoints<CR>
-nnoremap <leader>o :action FileStructurePopup<CR>
+map <leader>bb <Action>(ToggleLineBreakpoint)
+map <leader>br <Action>(ViewBreakpoints)
+map <leader>o <Action>(FileStructurePopup)
 
-nnoremap <Leader>ga :action GotoAction<CR>
-nnoremap <Leader>gc :action GotoClass<CR>
-nnoremap <Leader>b :action GotoDeclaration<CR>
-nnoremap <Leader>gf :action GotoFile<CR>
-nnoremap <Leader>i :action GotoImplementation<CR>
-nnoremap <Leader>gt :action GotoTest<CR>
+map ga <Action>(GotoAction)
+map gc <Action>(GotoClass)
+map gd <Action>(GotoDeclaration)
+map gf <Action>(GotoFile)
+map gi <Action>(GotoImplementation)
+map gt <Action>(GotoTest)
+map gh <Action>(Back)
+map gl <Action>(Forward)
 
-nnoremap <Leader>fm :action ReformatCode<CR>
+map <Leader>fm <Action>(ReformatCode)
 
-source ~/.vimrc
+" source ~/.vimrc

@@ -50,6 +50,13 @@ let mapleader = " "
 nnoremap <leader>s :wa<cr>
 nnoremap <leader>q :qa!<cr>
 nnoremap <leader>z :wq<cr>
+" quick copy
+"" PRIMARY
+noremap <Leader>y "*y
+noremap <Leader>p "*p
+"" CLIPBOARD
+noremap <Leader>Y "+y
+noremap <Leader>P "+p
 
 inoremap kj <Esc>
 
