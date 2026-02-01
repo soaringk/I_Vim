@@ -33,7 +33,7 @@ Plug 'tpope/vim-fugitive'
 
 " Syntax and linting
 Plug 'dense-analysis/ale'
-Plug 'valloric/youcompleteme'
+Plug 'ycm-core/youcompleteme'
 
 " Themes
 Plug 'itchyny/lightline.vim'
